@@ -1,0 +1,154 @@
+/* === Global Styles === */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings */
+h1, h2, h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 0.5rem 0;
+}
+
+h1 span {
+  color: #ffd700; /* Gold highlight */
+}
+
+/* === Header === */
+header {
+  padding: 1.5rem 1rem;
+  text-align: center;
+  background: rgba(0,0,0,0.4);
+  border-bottom: 2px solid #ffd700;
+}
+
+.search {
+  margin-top: 1rem;
+}
+
+.search input {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  width: 220px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+}
+
+.search button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #ffd700;
+  color: #000;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.search button:hover {
+  background: #ffcc00;
+}
+
+/* Suggestions dropdown */
+.suggestions {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem auto;
+  max-width: 250px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.suggestions li {
+  padding: 0.6rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.suggestions li:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+/* === Current Weather Section === */
+.current {
+  margin: 2rem auto;
+  max-width: 500px;
+  background: rgba(255,255,255,0.1);
+  padding: 1.5rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.current h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.current .stats div {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+#temp {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffd700;
+}
+
+/* === Forecast Section === */
+.forecast {
+  margin: 2rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.forecast h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.grid div {
+  background: rgba(255,255,255,0.1);
+  border-radius: 15px;
+  padding: 1rem;
+  transition: 0.3s;
+}
+
+.grid div:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-5px);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0,0,0,0.5);
+  font-size: 0.9rem;
+  border-top: 2px solid #ffd700;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

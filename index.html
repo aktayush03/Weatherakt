@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Weather — Powered by AKT Ayush</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Live Weather <span>— Powered by AKT Ayush</span></h1>
+    <div class="search">
+      <input id="q" type="text" placeholder="Search city (e.g., Delhi, London)"/>
+      <button id="findBtn">Search</button>
+      <button id="gpsBtn">Use My Location</button>
+    </div>
+    <ul id="suggestions" class="suggestions"></ul>
+  </header>
+
+  <main>
+    <section class="current" id="current">
+      <h2 id="cityTitle">Search a city to begin</h2>
+      <div class="stats">
+        <div><span id="temp">--</span><small>°C</small></div>
+        <div id="desc">—</div>
+        <div>Wind: <span id="wind">--</span> km/h</div>
+        <div>Humidity: <span id="humidity">--</span>%</div>
+        <div>Updated: <span id="updated">--</span></div>
+      </div>
+    </section>
+
+    <section class="forecast">
+      <h3>Next 7 days</h3>
+      <div id="forecastGrid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    Data by <a href="https://open-meteo.com/" target="_blank" rel="noreferrer">Open-Meteo</a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
